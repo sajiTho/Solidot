@@ -1,7 +1,7 @@
 .logo {
   position: absolute;
   left: 100.2px;
-  top: 30px;
+  top: 50px;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -24,7 +24,7 @@
   position: absolute;
   width: 1168.47px;
   height: 270.03px;
-  left: 100px;
+  left: 150px;
   top: 260.97px;
 
 }
@@ -36,7 +36,7 @@
   top: 294.94px;
   font-family: 'Epilogue';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 90px;
   line-height: 106px;
   text-transform: uppercase;
@@ -45,9 +45,9 @@
 
 .maskgroup {
   position: absolute;
-  width: 306.48px;
+  width: 432.48px;
   height: 121.8px;
-  left: 396px;
+  left: 344px;
   top: 0px;
   display: flex;
 }
@@ -61,7 +61,7 @@
   font-family: 'Epilogue';
   font-style: normal;
   font-weight: 900;
-  font-size: 90px;
+  font-size: 100px;
   line-height: 106px;
   display: flex;
   align-items: flex-end;
@@ -73,11 +73,11 @@
   position: absolute;
   width: 877px;
   height: 105.8px;
-  left: 0px;
+  left: 40px;
   top: 142.2px;
   font-family: 'Epilogue';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 90px;
   line-height: 106px;
   text-transform: uppercase;
@@ -87,9 +87,9 @@
 .btn {
   width: 282px;
   height: 86.84px;
-  left: 876px; 
-  top: 30px;  
-} 
+  left: 910px;
+  top: 30px;
+}
 
 .talk {
   width: 106px;
@@ -120,7 +120,7 @@
   width: 140px;
   height: 151px;
   left: 0px;
-  top: 315px;
+  top: 290px;
 }
 
 .explore {
@@ -146,7 +146,7 @@
 }
 
 .cutpiece {
- width: 0;
+  width: 0;
   height: 0;
   border-top: 100px solid #1e1e1e;
   border-right: 100vw solid transparent;
@@ -170,6 +170,7 @@
 .circlebutton:hover {
   background: #E6875F;
   color: #FFFFFF;
+  border: hidden;
 }
 
 .moree {
@@ -194,8 +195,18 @@
   top: 8px;
 }
 
+.videos {
+  position: relative;
+  height: 120px !important;
+  width: 350px !important;
+  top: -20px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
 .headings {
-width: 440px;
+  width: 440px;
   height: 78px;
   font-family: 'Epilogue';
   font-style: normal;
@@ -235,7 +246,7 @@ width: 440px;
   position: absolute;
   width: 710px;
   height: 54px;
-  font-family: 'Sen';
+  font-family: 'epiloque';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -309,22 +320,35 @@ width: 440px;
   height: 2057px;
   left: 0px;
   top: 1678px;
-background: #F7FFFF;
+  background: #F7FFFF;
 }
 
 .textfour {
-  font-style: normal;
+  font-style: 'epilogue';
   font-weight: 800;
-  font-size: 100px;
+  font-size: 130px;
   color: #E6875F;
+
+
+
 }
 
 .textfive {
-  font-style: normal;
+  font-style: 'epilogue';
   font-weight: 800;
-  font-size: 100px;
+  font-size: 130px;
+  color: white;
+  text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+
 }
 
+/* .gorilla:hover{
+  src: url(../public/one.jpeg);
+  cursor: pointer;
+} */
 .divimages {
   position: absolute;
   width: 1120.43px;
@@ -343,7 +367,38 @@ background: #F7FFFF;
   font-weight: 900;
   font-size: 23.9159px;
   line-height: 41px;
- color: #000000;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 145px;
+
+  position: relative;
+  width: 769px;
+  height: 724px;
+  left: 206px;
+  top: 1800px;
+}
+
+.numberone {
+  width: 631px;
+  height: 49px;
+
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 49px;
+  text-transform: capitalize;
+  color: #FFFFFF;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -354,7 +409,7 @@ background: #F7FFFF;
   margin-top: 90%;
   width: 200px;
   height: 42px;
- font-family: 'Epilogue';
+  font-family: 'Epilogue';
   font-style: normal;
   font-weight: 400;
   font-size: 19.9299px;
@@ -404,7 +459,7 @@ background: #F7FFFF;
 .namethree {
   width: 95px;
   height: 42px;
-font-family: 'Epilogue';
+  font-family: 'Epilogue';
   font-style: normal;
   font-weight: 900;
   font-size: 23.9159px;
@@ -433,7 +488,7 @@ font-family: 'Epilogue';
 .namefour {
   width: 156px;
   height: 42px;
-font-family: 'Epilogue';
+  font-family: 'Epilogue';
   font-style: normal;
   font-weight: 900;
   font-size: 23.9159px;
@@ -470,38 +525,9 @@ font-family: 'Epilogue';
   height: 503.42px;
   left: 0px;
   top: 0px;
+  /* border: #E5875F;
+  border-radius: 3px solid#E6875F ; */
 }
-
-.imageone:hover {
-  transform: scale(1.1);
-  animation-delay: 2s;
-  animation-duration: 2s;
-  overflow: hidden;
-}
-
-.imagetwo:hover {
-  transform: scale(1.1);
-  rotate: -5deg;
-  animation-delay: 2s;
-  animation-duration: 2s;
-  overflow: hidden;
-}
-
-.imagefour:hover {
-  transform: scale(1.1);
-  animation-delay: 2s;
-  animation-duration: 2s;
-  overflow: hidden;
-}
-
-.imagethree:hover {
-  transform: scale(1.1);
-  rotate: -5deg;
-  animation-delay: 2s;
-  animation-duration: 2s;
-  overflow: hidden;
-}
-
 .secondone {
   display: flex;
   flex-direction: column;
@@ -513,6 +539,8 @@ font-family: 'Epilogue';
   height: 503.42px;
   left: 642.17px;
   top: 301.16px;
+  /* border: #1e1e1e;
+  border-radius: 2px solid; */
 }
 
 .thirdone {
@@ -608,7 +636,7 @@ font-family: 'Epilogue';
   display: block;
   color: #FFFFFF;
   width: 99px;
-  height: 28px;
+  height: 44px;
   line-height: 1px;
   width: max-content;
 }
@@ -624,6 +652,7 @@ font-family: 'Epilogue';
   position: absolute;
   top: 8rem;
   left: 300px;
+  line-height: 3rem;
 }
 
 .thirdpart {
@@ -662,50 +691,7 @@ font-family: 'Epilogue';
   gap: 40px;
 }
 
-.commentsection {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 90px;
 
-  position: absolute;
-  width: 769px;
-  height: 724px;
-  left: 206px;
-  top: 2000px;
-}
-
-.numberone {
-  width: 631px;
-  height: 49px;
-
-  font-family: 'Epilogue';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 49px;
-  text-transform: capitalize;
-  color: #FFFFFF;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.numbertwo {
-  display: flex;
-  width: 550px;
-  height: 25px;
-  font-family: 'Epilogue';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 25px;
-  color: #FFFFFF;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
 
 .addbutton {
   display: flex;
@@ -720,7 +706,7 @@ font-family: 'Epilogue';
   width: 1436px;
   height: 529px;
   left: 46px;
-  top: 6568px;
+  top: 6812px;
   background-color: #E5875F;
 }
 
@@ -867,7 +853,7 @@ font-family: 'Epilogue';
   line-height: 15px;
   letter-spacing: 0.2em;
   color: #E6875F;
-flex: none;
+  flex: none;
   order: 0;
   flex-grow: 0;
 }
@@ -953,3 +939,37 @@ flex: none;
   order: 4;
   flex-grow: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* .accordion{
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgb(105, 206, 105);
+  border-radius: 10px;
+}
+.accordion__question p{
+  margin: 5px;
+  padding: 0;
+  font-family: Verdana;
+  font-size: 20px;
+}
+.accordion__answer p{
+  margin: 5px;
+  padding: 10px;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
+  background: rgb(82, 170, 122);
+  border-radius: 10px; 
+} */
