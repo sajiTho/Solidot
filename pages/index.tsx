@@ -5,6 +5,7 @@ import Portfolio from '../components/Portfolio'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import Menu from '../components/Menu'
+import Navbar from '../components/Navbar'
 
 export interface ForMenuState {
   MenuState: boolean;
@@ -20,6 +21,7 @@ const index = () => {
   let [MenuState, setMenuState] = useState<boolean>(false)
   return (
     <div>
+      <Navbar/>
       <SetMenuState.Provider value={{ MenuState, setMenuState }}>
         <Hero />
       </SetMenuState.Provider>
@@ -27,12 +29,12 @@ const index = () => {
       <Portfolio />
       <Contact />
       <Footer />
-      {
+      {/* {
         MenuState &&
         <SetMenuState.Provider value={{ MenuState, setMenuState}}>
           <Menu />
         </SetMenuState.Provider>
-      }
+      } */}
     </div>
   )
 }

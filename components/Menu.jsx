@@ -8,7 +8,7 @@ const Menu = () => {
     <div className={css.topslide}>
         <img src="logo.svg" alt="" className={css.logo} />
         <img src="framemenu.svg" alt="" className={css.framemenu} />
-        <img src="menuframe.svg" alt="" className={css.menuframe} onClick={()=>MenuState.setMenuState(false)}/>
+        <img src="menuframe.svg" alt="" className={`${css.menuframe} cursor-pointer`} onClick={()=>MenuState.setMenuState(false)}/>
         <div className={css.firstdivs}>
             <span className={css.leftheading}>SOMTHING IN MIND?</span>
             <span className={css.leftheadingone}>Wehere@solidot.com</span>

@@ -3,7 +3,7 @@ import css from '../styles/Home.module.css'
 
 const about = () => {
   return (
-    <div className={css.solidot}>
+    <div name='about' className={css.solidot}>
       <div className={css.cutpiece}></div>
         <div className={css.seconddiv}>
             <h1 className={css.headings}>WHY SOLIDOT?</h1>

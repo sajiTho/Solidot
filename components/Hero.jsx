@@ -17,11 +17,11 @@ const Hero = () => {
   return (
     <div className='container'>
       <img className={css.logo} src="logo.svg" alt="logo" />
-      <img src="menu-icon.svg" alt="" className={css.menu} onClick={() => MenuState.setMenuState(!MenuState.MenuState)} />
+      {/* <img src="menu-icon.svg" alt="" className={`${css.menu} cursor-pointer`} onClick={() => MenuState.setMenuState(!MenuState.MenuState)} /> */}
       <div className={css.tittle}>
         <span className={css.one}>WHERE</span>
         <div className={css.maskgroup}>
-          <img src="mask-group.svg" alt="" />
+          <video src="videoone.mp4" className={` ${css.videos}`} autoPlay loop playsInline muted></video>
         </div>
         <span className={css.two}>CREATIVITY</span>
         <span className={css.three}>KNOWS NO BOUNDS</span>

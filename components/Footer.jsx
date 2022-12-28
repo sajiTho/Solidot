@@ -5,8 +5,21 @@ import css from '../styles/Home.module.css'
 
 const Footer = () => {
 
+    let socialImages = [{
+        src: 'componentI.svg',
+        className: css.components
+    }, {
+        src: 'componentII.svg',
+        className: css.componentII
+    }, {
+        src: 'componentIII.svg',
+        className: css.componentIII
+    }, {
+        src: 'componentIV.svg',
+        className: css.componentIIIV
+    }]
     return (
-        <div className={css.footer}>
+        <div name='footer' className={css.footer}>
             <div className={css.maincomponent}>
                 <div className={css.secondcomponent}>
                     <span className={css.footerheadingone}>
@@ -24,10 +37,8 @@ const Footer = () => {
                     />
                 </div>
                 <div className={css.thirdcomponent}>
-                    <img src="componentI.svg" alt="" className={css.components} />
-                    <img src="componentII.svg" alt="" className={css.componentII} />
-                    <img src="componentIII.svg" alt="" className={css.componentIII} />
-                    <img src="componentIV.svg" alt="" className={css.componentIIIV} />
+                    {socialImages.map((social, i) =>
+                        <img key={i} src={social.src} alt="Social Icon" className={`${social.className} rounded-lg hover:bg-[#ff976b]`} />)}
                 </div>
             </div>
         </div>
