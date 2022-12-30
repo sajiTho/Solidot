@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import Button from '../atoms/Let\'sTalkButton/Button'
 import { SetMenuState } from '../pages'
 import css from "../styles/Home.module.css"
-
+// import * as LottiePlayer from "@lottiefiles/lottie-player";
 const Hero = () => {
   let MenuState = useContext(SetMenuState)
 
@@ -12,11 +12,24 @@ const Hero = () => {
     console.log(isHovering),
     [isHovering]
   )
-
+  React.useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
 
   return (
     <div className='container'>
-      <img className={css.logo} src="logo.svg" alt="logo" />
+      <div className={css.logo}>
+        <lottie-player
+          autoplay
+         
+          loop
+          mode="normal"
+          src="/Solidot.json"
+          style={{ width: "300px", height: "150px" }}
+        >
+        </lottie-player>
+      </div>
+      {/* <img className={css.logo} src="logo.svg" alt="logo" /> */}
       {/* <img src="menu-icon.svg" alt="" className={`${css.menu} cursor-pointer`} onClick={() => MenuState.setMenuState(!MenuState.MenuState)} /> */}
       <div className={css.tittle}>
         <span className={css.one}>WHERE</span>

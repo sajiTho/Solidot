@@ -44,23 +44,35 @@ const Navbar = () => {
   return (
     <div
       style={{ backgroundColor: `${color}` }}
-      className='fixed left-1/3 bottom-5 right-1/3 z-10 ease-in duration-300 rounded-full'
+      className='fixed left-[470px] bottom-5 right-[470px] z-10 ease-in duration-300 rounded-full'
     >
-      <div className='max-w-[1240px] m-auto flex  items-center justify-center space-x-10 p-2 text-black '>
+      <div className='max-w-[1240px] m-auto flex  items-center justify-center space-x-10 p-1 text-black '>
 
         <ul style={{ color: `${textColor}` }} className='flex items-center'>
-          <li className='p-3  rounded-full hover:bg-[#E6875F] '>
+          <li className='p-3 gap-3 rounded-full hover:bg-[#E6875F] '>
             <Link href="/">
               <AiOutlineArrowUp size={25} className="  rounded-full " style={{ color: `${textColor}` }} />
             </Link>
           </li>
           {
             menuItems.map(item =>
-              <li className='p-2 font-bold rounded-full hover:bg-[#E6875F]  '>
-                <Link href={item.link}>{item.name}</Link>
-              </li>
+              <Link href={item.link}>
+                <li className='p-2 gap-8 font-bold rounded-full hover:bg-[#E6875F]  '>
+                  {item.name}
+                </li>
+              </Link>
             )
           }
+          <lottie-player
+            className="gap-4 justify-start"
+            autoplay
+
+            loop
+            mode="normal"
+            src="/SolidotIcon.json"
+            style={{ width: "45px", height: "45px" }}
+          >
+          </lottie-player>
         </ul>
 
         {/* Mobile Button */}
