@@ -247,11 +247,11 @@
   position: absolute;
   width: 710px;
   height: 54px;
-  font-family: 'sen';
+  font-family:sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 20px;
+  line-height: 29px;
   top: 37rem;
   left: 410px;
   text-align: center;
