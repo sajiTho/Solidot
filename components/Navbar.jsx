@@ -44,25 +44,11 @@ const Navbar = () => {
   return (
     <div
       style={{ backgroundColor: `${color}` }}
-      className='fixed left-[470px] bottom-5 right-[470px] z-10 ease-in duration-300 rounded-full'
+      className='fixed left-[497px] bottom-5 right-[500px] items-center justify-center z-10 ease-in duration-300 rounded-full'
     >
-      <div className='max-w-[1240px] m-auto flex  items-center justify-center space-x-10 p-1 text-black '>
+      <div className='max-w-[1240px] m-auto flex  space-x-14  p-1 text-black '>
 
-        <ul style={{ color: `${textColor}` }} className='flex items-center'>
-          <li className='p-3 gap-3 rounded-full hover:bg-[#E6875F] '>
-            <Link href="/">
-              <AiOutlineArrowUp size={25} className="  rounded-full " style={{ color: `${textColor}` }} />
-            </Link>
-          </li>
-          {
-            menuItems.map(item =>
-              <Link href={item.link}>
-                <li className='p-2 gap-8 font-bold rounded-full hover:bg-[#E6875F]  '>
-                  {item.name}
-                </li>
-              </Link>
-            )
-          }
+        <ul style={{ color: `${textColor}` }} className='flex items-center gap-2'>
           <lottie-player
             className="gap-4 justify-start"
             autoplay
@@ -73,6 +59,21 @@ const Navbar = () => {
             style={{ width: "45px", height: "45px" }}
           >
           </lottie-player>
+
+          {
+            menuItems.map(item =>
+              <Link href={item.link}>
+                <li className='p-2 gap-20 font-bold rounded-full hover:bg-[#E6875F]  '>
+                  {item.name}
+                </li>
+              </Link>
+            )
+          }
+          <li className='p-3 gap-5 rounded-full bg-[#E6875F] '>
+            <Link href="/">
+              <AiOutlineArrowUp size={25} className="  rounded-full " style={{ color: `${textColor}` }} />
+            </Link>
+          </li>
         </ul>
 
         {/* Mobile Button */}

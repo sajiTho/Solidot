@@ -26,13 +26,14 @@ let BrandData = [{
 }, {
   defaultImage: 'ChadVerse.svg',
   hoverdImage: 'Four.svg'
-}, {
-  defaultImage: 'Group2520.svg',
-  hoverdImage: 'Group2520.svg'
-}, {
-  defaultImage: 'witness.png',
-  hoverdImage: 'witness.png'
-},]
+}]
+// }, {
+//   defaultImage: 'Group2520.svg',
+//   hoverdImage: 'Group2520.svg'
+// }, {
+//   defaultImage: 'witness.png',
+//   hoverdImage: 'witness.png'
+// },]
 export default function Contact() {
   const [open, setOpen] = useState(1);
 

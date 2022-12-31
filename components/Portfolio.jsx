@@ -3,21 +3,6 @@ import React from 'react'
 import css from '../styles/Home.module.css'
 
 const portfolio = () => {
-
-//  let PortfolioImages = [{
-//   src : 'imgone.svg' ,
-//   className : css.firstone
-// },{
-//   src : 'imgtwo.svg' , 
-//   className : css.firstone
-// },{
-//   src : 'imgthree.svg' ,
-//   className : css.firstone
-// },{
-//   src : 'imgfour.svg' ,
-//   className : css.firstone
-// }]
-
   return (
     <div name='portfolio' className={css.designing}>
       <div>
@@ -26,12 +11,11 @@ const portfolio = () => {
         </marquee>
         <marquee width="100%" direction="left" height="140px" scrollamount="10" Behavior='Alternate'>
           <span className={css.textfive}>RECENT CASE STUDIES RECENT CASE STUDIES</span>
-          {/* <img src='empty.svg' /> */}
         </marquee>
       </div>
       <div className={css.divimages}>
 
-        <div className={css.firstone}>
+        <div className={`${css.firstone}`}>
           <span className={`hover:text-[#E6875F] ${css.nameone}`}>Dayhour</span>
           <span className={css.nameonedesc}>Web Portal</span>
           <div className={css.innerdiv}>

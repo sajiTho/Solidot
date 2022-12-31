@@ -25,7 +25,7 @@ const Hero = () => {
           loop
           mode="normal"
           src="/Solidot.json"
-          style={{ width: "300px", height: "150px" }}
+          style={{ width: "150px", height: "100px" }}
         >
         </lottie-player>
       </div>
