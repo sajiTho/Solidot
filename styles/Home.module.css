@@ -898,11 +898,13 @@ left: 641px;
 
 .content {
   display: flex;
+  flex-flow: wrap;
   position: relative;
+  width: 1017px;
   align-items: center;
-  top: -9rem;
+  top: -14rem;
   justify-content: center;
-  gap: 0px;
+  gap: 15px;
   left: 0px;
 }
 
@@ -1159,3 +1161,157 @@ left: 641px;
   order: 4;
   flex-grow: 0;
 }
+
+
+
+
+/*MOBILE responsive */
+
+/* @media only screen and (min-width: 768px) {
+  
+
+  .logo{
+    position: relative;
+    width: 130.29px;
+    height: 32px;
+    left: 60px;
+    top: 80px;
+    
+
+    
+    background: #F7FFFF;
+
+  }
+  .tittle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 18px;
+    
+    width: 354.34px;
+    height: 400.46px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+      }
+  .one{
+    width: 166px;
+    height: 53px;
+    
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    
+        
+    color: #FFFFFF;
+    
+    
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .videos{
+    position:relative;
+    width: 255.28px;
+    top: 65px;
+    left: -340px;
+    height: 101.46px;
+    
+    
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .two{
+    position:relative;
+    top: 0px;
+    left: 40px;
+  
+    width: 354.34px;
+height: 210px;
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 700;
+font-size: 52px;
+line-height: 70px;
+
+text-align: center;
+text-transform: uppercase;
+
+color: #E6875F;
+
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+  .three{
+    position: relative;
+    width: 354.34px;
+    height: 210px;
+    
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 70px;
+    top: -20px;
+    left: -10px;
+    text-align: center;
+    text-transform: uppercase;
+    
+        
+    color: #FFFFFF;
+    
+    
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.btn{
+  position: relative;
+  left: -5px;
+  top: -100px;
+  width: 304.34px;
+height: 100px;
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 700;
+font-size: 52px;
+line-height: 70px;
+
+text-align: center;
+text-transform: uppercase;
+
+
+color: #E6875F;
+
+
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+  
+
+} 
+
+
+
+
+
+
+@media only screen and (min-width: 1024px) {
+
+}  */
