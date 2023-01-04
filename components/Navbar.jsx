@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <div
       style={{ backgroundColor: `${color}` }}
-      className='fixed left-[497px] bottom-5 right-[500px] items-center justify-center z-10 ease-in duration-300 rounded-full'
+      className=' fixed left-[497px] bottom-5 right-[500px] items-center justify-center z-10 ease-in duration-300 rounded-full'
     >
       <div className='max-w-[1240px] m-auto flex  space-x-14  p-1 text-black '>
 
@@ -88,8 +88,8 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
-              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+              ? 'sm:hidden absolute top-0 left-0 right-0  flex justify-center items-center w-full h-screen text-center ease-in duration-300'
+              : ' sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
           }
         >
           <ul>
@@ -99,9 +99,7 @@ const Navbar = () => {
             <li onClick={handleNav} className='p-4 text-4xl hover:bg-[#E6875F] '>
               <Link href='/portfolio'>Portfolio</Link>
             </li>
-            {/* <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/'>Work</Link>
-            </li> */}
+
             <li onClick={handleNav} className='p-4 text-4xl hover:bg-[#E6875F] '>
               <Link href='/contact'>Contact</Link>
             </li>

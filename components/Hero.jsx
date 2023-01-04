@@ -29,11 +29,11 @@ const Hero = () => {
         >
         </lottie-player>
       </div>
-      {/* <img className={css.logo} src="logo.svg" alt="logo" /> */}
+      {/* <img className={css.logos} src="dc4.png" alt="logo" /> */}
       {/* <img src="menu-icon.svg" alt="" className={`${css.menu} cursor-pointer`} onClick={() => MenuState.setMenuState(!MenuState.MenuState)} /> */}
       <div className={css.tittle}>
         <span className={css.one}>WHERE</span>
-        <div className={css.maskgroup}>
+        <div className={` ${css.maskgroup}`}>
           <video src="videoone.mp4" className={` ${css.videos}`} autoPlay loop playsInline muted></video>
         </div>
         <span className={css.two}>CREATIVITY</span>
@@ -49,7 +49,7 @@ const Hero = () => {
           defaultImage='arrow.svg'
           hoverdImage='arrowtwo.svg'
         />
-        <img src="scroll-to-explore.svg" alt="" className={css.explore} />
+        <img src="scroll-to-explore.svg" alt="" className={`sm:hidden ${css.explore}`} />
       </div>
 
 
