@@ -21,15 +21,15 @@ const index = () => {
   let [MenuState, setMenuState] = useState<boolean>(false)
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <SetMenuState.Provider value={{ MenuState, setMenuState }}>
         <Hero />
       </SetMenuState.Provider>
-      <About />
+      {/* <About />
       <Portfolio />
       <Contact />
       <Footer />
-      {/* {
+      {
         MenuState &&
         <SetMenuState.Provider value={{ MenuState, setMenuState}}>
           <Menu />

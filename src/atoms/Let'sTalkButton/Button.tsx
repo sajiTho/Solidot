@@ -5,7 +5,7 @@ import { ForButton } from './ButtonTypes'
 const Button: FC<ForButton> = ({ buttonClasses, textClasses, defaultImage, hoverdImage }) => {
     const [isHovering, setIsHovered] = useState(false);
     return (
-        <button onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className={`flex justify-center rounded-full border-2 hover:border-black ${buttonClasses}`}>
+        <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className={`flex justify-center rounded-full cursor-pointer border-2 hover:border-black ${buttonClasses}`}>
             <span className={`flex-initial text-2xl my-auto pr-2 ${textClasses}`}>Let's Talk</span>
             <Image
                 src={isHovering ? `/${hoverdImage}` : `/${defaultImage}`}
@@ -14,7 +14,7 @@ const Button: FC<ForButton> = ({ buttonClasses, textClasses, defaultImage, hover
                 height={10}
                 alt='Arrow Icon'
             />
-        </button>
+        </div>
     )
 }
 
