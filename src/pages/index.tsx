@@ -25,7 +25,7 @@ const index = () => {
       <SetMenuState.Provider value={{ MenuState, setMenuState }}>
         <Hero />
       </SetMenuState.Provider>
-      {/* <About />
+      <About />
       <Portfolio />
       <Contact />
       <Footer />
@@ -34,7 +34,7 @@ const index = () => {
         <SetMenuState.Provider value={{ MenuState, setMenuState}}>
           <Menu />
         </SetMenuState.Provider>
-      } */}
+      }
     </div>
   )
 }

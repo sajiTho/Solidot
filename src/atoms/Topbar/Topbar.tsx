@@ -12,7 +12,7 @@ const Topbar: FC<ForTopBar> = () => {
                 loop
                 mode="normal"
                 src="/Solidot.json"
-                style={{ width: "150px", height: "100px" }}
+                style={{ width: "180px", height: "120px" }}
             >
             </lottie-player>
         </div>

@@ -22,7 +22,7 @@ let menuItems = [{
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [color, setColor] = useState('transparent');
+  const [color, setColor] = useState('none');
 
   const handleNav = () => {
     setNav(!nav);
@@ -32,12 +32,12 @@ const Navbar = () => {
   });
   useEffect(() => {
     const changeColor = () => {
-      window.scrollY >= 90 ? setColor('black') : setColor('transparent')
+      window.scrollY >= 90 ? setColor('black') : setColor('none')
     };
     window.addEventListener('scroll', changeColor);
   }, []);
   return (
-    <div className="fixed w-full bottom-5">
+    <div className="fixed w-full bottom-5 z-50">
       <div className={`flex justify-center max-w-fit bg-${color} mx-auto text-white relative tracking-widest items-center gap-4 px-8 py-3 z-10 ease-in duration-300 rounded-full`} >
         <div>
           <lottie-player

@@ -1,10 +1,3 @@
-.addbutton {
-  left: 40px;
-  display: inline;
-  position: relative;
-  height: 20px;
-}
-
 .menu {
   padding: 0px;
   position: absolute;
@@ -19,114 +12,6 @@
   display: none;
 }
 
-
-.one {
-  width: 286px;
-  height: 105.8px;
-  left: 100px;
-  top: 294.94px;
-  font-family: 'Epilogue';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 90px;
-  line-height: 106px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
-.maskgroup {
-  position: absolute;
-  width: 432.48px;
-  height: 121.8px;
-  left: 344px;
-  top: 0px;
-  display: flex;
-}
-
-.two {
-  position: absolute;
-  width: 521px;
-  height: 105.8px;
-  left: 747.47px;
-  top: 0px;
-  font-family: 'Epilogue';
-  font-style: normal;
-  font-weight: 900;
-  font-size: 100px;
-  line-height: 106px;
-  display: flex;
-  align-items: flex-end;
-  text-transform: uppercase;
-  color: #E6875F;
-}
-
-.three {
-  position: absolute;
-  width: 877px;
-  height: 105.8px;
-  left: 40px;
-  top: 142.2px;
-  font-family: 'Epilogue';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 90px;
-  line-height: 106px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
-.btn {
-  width: 282px;
-  height: 86.84px;
-  left: 910px;
-  top: 30px;
-}
-
-.talk {
-  width: 106px;
-  height: 25px;
-  display: flex;
-  align-items: flex-end;
-  color: #FFFFFF;
-  position: relative;
-  left: 68px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.arrow {
-  width: 23.68px;
-  height: 11.32px;
-  position: absolute;
-  bottom: 35px;
-  left: 180px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.explore {
-  position: absolute;
-  width: 140px;
-  height: 151px;
-  left: 0px;
-  top: 290px;
-}
-
-.explore {
-  animation: rotation 5s infinite linear;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .solidot {
   position: absolute;
@@ -181,15 +66,6 @@
   height: 825px;
   left: 50px;
   top: 8px;
-}
-
-.videos {
-  position: relative;
-  height: 120px !important;
-  width: 350px !important;
-  top: -20px;
-  border-radius: 10px;
-  object-fit: cover;
 }
 
 .headings {
@@ -922,129 +798,8 @@
   /* left: 100px; */
 }
 
-
-
-.footer {
-  position: absolute;
-  width: 1436px;
-  height: 529px;
-  left: 60px;
-  top: 6840px;
-  border-radius: 20px;
-  background-color: #E5875F;
-}
-
-.maincomponent {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 426px;
-  position: absolute;
-  width: 1240.15px;
-  height: 319.25px;
-  left: 99.92px;
-  top: 105px;
-}
-
-.secondcomponent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 30px;
-  width: 512.11px;
-  height: 319px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  text-align: center;
-  left: -36px;
-  position: relative;
-}
-
-.bton {
-  left: 92px;
-}
-
-.footerheadingone {
-  position: relative;
-  left: 67px;
-}
-
-.footerheadingone {
-  width: 398px;
-  height: 18px;
-  font-family: 'Epilogue';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 18px;
-  color: #1A1A1A;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.footerheadingtwo {
-  width: 512.11px;
-  height: 170px;
-  font-family: 'Epilogue';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 70px;
-  line-height: 85px;
-  letter-spacing: 0.03em;
-  color: #1A1A1A;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.bton {
-  width: 282px;
-  height: 86.84px;
-  top: 240.2px;
-}
-
-.thirdcomponent {
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 12px;
-  width: 302.05px;
-  height: 240px;
-  flex: none;
-  order: 1;
-  left: 18px;
-  flex-grow: 0;
-}
-
 .solidot {
   height: 54rem;
-}
-
-.components {
-  display: flex;
-  position: absolute;
-}
-
-.componentII {
-  position: relative;
-  left: 10rem;
-}
-
-.componenIII {
-  position: absolute;
-  left: 25rem;
-}
-
-.componentIIIV {
-  position: relative;
-  left: 10rem;
-  top: -8rem;
 }
 
 /* .framemenu {
@@ -1726,17 +1481,6 @@
     left: 8rem;
   }
 
-  .footer {
-    position: relative;
-    width: 610px;
-    height: 922.8px;
-    top: 324rem;
-
-    background: #E6875F;
-    border-radius: 12px;
-
-    left: 26px;
-  }
 
   .maincomponent {
     position: relative;

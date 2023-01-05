@@ -6,7 +6,18 @@ module.exports = withMT({
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        custom_spin: 'custom_spin 8s linear infinite',
+      },
+      keyframes: {
+        custom_spin: {
+          '0%, 100%': { transform: 'rotate(0deg) scale(1)', },
+          '50%': { transform: 'rotate(360deg) scale(1.2)' },
+        }
+      }
+
+    },
   },
   plugins: [],
 });
