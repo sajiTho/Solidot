@@ -1,17 +1,17 @@
 import Button from '../atoms/Let\'sTalkButton/Button'
+let socialImages = [{
+    src: 'componentI.svg',
+}, {
+    src: 'componentII.svg'
+}, {
+    src: 'componentIII.svg'
+}, {
+    src: 'componentIV.svg'
+}]
 const Footer = () => {
-    let socialImages = [{
-        src: 'componentI.svg',
-    }, {
-        src: 'componentII.svg'
-    }, {
-        src: 'componentIII.svg'
-    }, {
-        src: 'componentIV.svg'
-    }]
     return (
-        <div className={`top-[6840px] flex justify-center items-center top=[6840px] absolute w-screen h-screen`}>
-            <div name='footer' className={`flex justify-evenly relative bg-[#E5875F] w-[88%] h-[88%] rounded-2xl`}>
+        <div id='footer' className={`top-[6840px] flex justify-center items-center top=[6840px] absolute w-screen h-screen`}>
+            <div className={`flex justify-evenly relative bg-[#E5875F] w-[88%] h-[88%] rounded-2xl`}>
                 <div className="grid grid-flow-col justify-center items-center">
                     <div className='grid grid-rows-3 max-w-[70%]'>
                         <div className='font-semibold text-lg self-center'>

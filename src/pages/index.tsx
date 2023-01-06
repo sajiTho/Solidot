@@ -1,10 +1,11 @@
-import React, { createContext, useContext, useState } from 'react'
+import React, { createContext, useState } from 'react'
 import Hero from '../components/Hero'
-import About from '../components/About'
 import Portfolio from '../components/Portfolio'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import Menu from '../components/Menu'
+import About from '../components/About'
+import { NextPage } from 'next'
 import Navbar from '../components/Navbar'
 
 export interface ForMenuState {
@@ -17,7 +18,7 @@ export const SetMenuState = createContext<ForMenuState>({
   setMenuState: () => { }
 })
 
-const index = () => {
+const index: NextPage = () => {
   let [MenuState, setMenuState] = useState<boolean>(false)
   return (
     <div>
@@ -26,7 +27,7 @@ const index = () => {
         <Hero />
       </SetMenuState.Provider>
       <About />
-      <Portfolio />
+      {/* <Portfolio />
       <Contact />
       <Footer />
       {
@@ -34,7 +35,7 @@ const index = () => {
         <SetMenuState.Provider value={{ MenuState, setMenuState}}>
           <Menu />
         </SetMenuState.Provider>
-      }
+      } */}
     </div>
   )
 }

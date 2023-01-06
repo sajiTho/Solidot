@@ -21,13 +21,6 @@
   background: #F7FFFF;
 }
 
-.cutpiece {
-  width: 0;
-  height: 0;
-  border-top: 100px solid #1e1e1e;
-  border-right: 100vw solid transparent;
-}
-
 .circlebutton {
   box-sizing: border-box;
   position: absolute;
@@ -60,69 +53,6 @@
   text-transform: uppercase;
 }
 
-.seconddiv {
-  position: absolute;
-  width: 1440px;
-  height: 825px;
-  left: 50px;
-  top: 8px;
-}
-
-.headings {
-  width: 440px;
-  height: 78px;
-  font-family: 'Epilogue';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 56px;
-  line-height: 78px;
-  text-align: center;
-  color: #E6875F;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  left: 35rem;
-  position: absolute;
-  top: 140px;
-}
-
-.description {
-  display: block;
-  position: absolute;
-  width: 990.39px;
-  height: 312px;
-  font-family: 'Epilogue';
-  font-style: normal;
-  font-weight: 55 0;
-  font-size: 56px;
-  line-height: 78px;
-  text-align: center;
-  color: #1A1A1A;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  top: 250px;
-  left: 267px;
-}
-
-.desc {
-  position: absolute;
-  width: 710px;
-  height: 54px;
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 29px;
-  top: 37rem;
-  left: 410px;
-  text-align: center;
-  color: #000000;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
 .descone {
   position: absolute;
   top: 42rem;
@@ -133,48 +63,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 20px;
-  text-align: center;
   color: #E6875F;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.desctwo {
-  position: absolute;
-  top: 42rem;
-  left: 719px;
-  width: 89px;
-  height: 21px;
-  font-family: 'Epilogue';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  text-align: center;
-  color: #E6875F;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.descthree {
-  position: absolute;
-  top: 42rem;
-  left: 919px;
-  width: 101px;
-  height: 21px;
-  font-family: 'Epilogue';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  text-align: center;
-  color: #E6875F;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
 }
 
 .designing {
@@ -1267,19 +1156,6 @@
   }
 
 
-  .headings {
-    position: relative;
-    width: 340px;
-    height: 38px;
-    left: 6rem;
-    font-family: 'Epilogue';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 46px;
-    line-height: 39px;
-    text-align: center;
-    color: #E6875F;
-  }
 
   .description {
     position: relative;

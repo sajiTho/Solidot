@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { FC, useState } from 'react'
 import { ForButton } from './ButtonTypes'
-
 const Button: FC<ForButton> = ({ buttonClasses, textClasses, defaultImage, hoverdImage }) => {
     const [isHovering, setIsHovered] = useState(false);
     return (
@@ -15,8 +14,6 @@ const Button: FC<ForButton> = ({ buttonClasses, textClasses, defaultImage, hover
                     alt='Arrow Icon'
                 />
             </span>
-        </div>
-    )
+        </div>)
 }
-
 export default Button

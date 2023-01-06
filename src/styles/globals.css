@@ -12,6 +12,23 @@
 
 }
 
+@font-face {
+  font-family: 'Epilogue Bold';
+  src: url('../../public/Epilogue/static/Epilogue-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: normal;
+}
+
+@font-face {
+  font-family: 'Epilogue Extra Bold';
+  src: url('../../public/Epilogue/static/Epilogue-ExtraBold.ttf');
+  font-weight: 900;
+  font-style: normal;
+  font-display: normal;
+
+}
+
 body {
   position: absolute;
   width: 100%;
