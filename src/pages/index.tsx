@@ -21,14 +21,14 @@ export const SetMenuState = createContext<ForMenuState>({
 const index: NextPage = () => {
   let [MenuState, setMenuState] = useState<boolean>(false)
   return (
-    <div>
+    <>
       <Navbar />
       <SetMenuState.Provider value={{ MenuState, setMenuState }}>
         <Hero />
       </SetMenuState.Provider>
       <About />
-      {/* <Portfolio />
-      <Contact />
+      <Portfolio />
+      {/* <Contact />
       <Footer />
       {
         MenuState &&
@@ -36,7 +36,7 @@ const index: NextPage = () => {
           <Menu />
         </SetMenuState.Provider>
       } */}
-    </div>
+    </>
   )
 }
 

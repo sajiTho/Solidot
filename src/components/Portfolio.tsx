@@ -1,19 +1,11 @@
-import Image from 'next/image'
 import React from 'react'
+import Headline from '../atoms/Headline/Headlines'
 import css from '../styles/Home.module.css'
-
 const portfolio = () => {
   return (
-    <div name='portfolio' className={css.designing}>
-      <div className={css.marquee}>
-        <marquee width="100%" direction="left" height="140px" scrollamount="10" hspace="0%" Behavior='Alternate'>
-          <span className={css.textfour}>FEATURED CASE STUDIES FEATURED CASE STUDIES </span>
-        </marquee>
-        <marquee width="100%" direction="left" height="140px" scrollamount="10" Behavior='Alternate'>
-          <span className={css.textfive}>RECENT CASE STUDIES RECENT CASE STUDIES REC</span>
-        </marquee>
-      </div>
-      <div className={css.divimages}>
+    <div id='portfolio' className='bg-white '>
+      <Headline />
+      {/* <div className={css.divimages}>
 
         <div className={`${css.firstone}`}>
           <span className={`hover:text-[#E6875F] ${css.nameone}`}>Dayhour</span>
@@ -51,7 +43,7 @@ const portfolio = () => {
 
           <span className={css.moree}>VIEW MORE</span>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

@@ -4,6 +4,7 @@ module.exports = withMT({
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/atoms/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     fontFamily: {

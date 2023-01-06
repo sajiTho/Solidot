@@ -66,41 +66,6 @@
   color: #E6875F;
 }
 
-.designing {
-  position: absolute;
-  width: 100vw;
-  height: 2057px;
-  left: 0px;
-  top: 1678px;
-  background: #F7FFFF;
-}
-
-.textfour {
-  font-style: 'epilogue';
-  font-weight: 800;
-  font-size: 130px;
-  color: #E6875F;
-
-
-
-}
-
-.textfive {
-  font-style: 'epilogue';
-  font-weight: 800;
-  font-size: 130px;
-  color: white;
-  text-shadow: -1px 1px 0 #000,
-    1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000;
-
-}
-
-/* .gorilla:hover{
-  src: url(../../public/one.jpeg);
-  cursor: pointer;
-} */
 .divimages {
   position: absolute;
   width: 1120.43px;
@@ -1412,10 +1377,10 @@
     top: 2rem;
   }
 
-  .marquee {
+  /* .marquee {
     width: 678px;
     overflow: hidden;
-  }
+  } */
 
   .harry {
     position: relative;
