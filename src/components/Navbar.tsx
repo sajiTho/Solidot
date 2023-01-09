@@ -50,8 +50,8 @@ const Navbar: FC = () => {
           </lottie-player>
         </div>
         {
-          menuItems.map(item =>
-            <Link href={item.link}>
+          menuItems.map((item, i) =>
+            <Link key={i} href={item.link}>
               <div className='p-3 font-bold rounded-full hover:bg-[#E6875F]  '>
                 {item.name}
               </div>

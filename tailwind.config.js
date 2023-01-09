@@ -18,8 +18,8 @@ module.exports = withMT({
       keyframes: {
         custom_spin: {
           '0%, 100%': { transform: 'rotate(0deg) scale(1)', },
-          '50%': { transform: 'rotate(360deg) scale(1.4)' },
-        }
+          '50%': { transform: 'rotate(360deg) scale(1.2)' },
+        },
       }
 
     },

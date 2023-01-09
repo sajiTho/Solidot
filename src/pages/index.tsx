@@ -28,8 +28,8 @@ const index: NextPage = () => {
       </SetMenuState.Provider>
       <About />
       <Portfolio />
-      {/* <Contact />
-      <Footer />
+      <Contact />
+      {/* <Footer />
       {
         MenuState &&
         <SetMenuState.Provider value={{ MenuState, setMenuState}}>

@@ -1,51 +1,48 @@
 import React from 'react'
 import Headline from '../atoms/Headline/Headlines'
-import css from '../styles/Home.module.css'
+
+export interface ForPortfolioItems {
+  title: string;
+  desc: string;
+  imagePath: string;
+}
+
+const portfolioItems: ForPortfolioItems[] = [
+  {
+    title: 'Dayhour',
+    desc: 'Web Portal',
+    imagePath: 'imageone.svg'
+  }, {
+    title: 'E-Kapray',
+    desc: 'Mobile App',
+    imagePath: 'imagetwo.svg'
+  }, {
+    title: 'Safe pal',
+    desc: 'Blockchain Wallet',
+    imagePath: 'imagethree.svg'
+  }, {
+    title: 'Audiojungle',
+    desc: 'Blockchain Wallet',
+    imagePath: 'imagefour.svg'
+  },
+]
 const portfolio = () => {
   return (
     <div id='portfolio' className='bg-white '>
       <Headline />
-      {/* <div className={css.divimages}>
-
-        <div className={`${css.firstone}`}>
-          <span className={`hover:text-[#E6875F] ${css.nameone}`}>Dayhour</span>
-          <span className={css.nameonedesc}>Web Portal</span>
-          <div className={css.innerdiv}>
-            <div className={css.imgdiv}></div>
-          </div>
-        </div>
-
-        <div className={css.secondone}>
-          <span className={`hover:text-[#E6875F] ${css.nameone}`}>E-Kapray</span>
-          <span className={css.nameonedesc}>Mobile App</span>
-          <div className={css.innerdivss}>
-            <div className={css.imgdivss}></div>
-          </div>
-        </div>
-
-        <div className={css.thirdone}>
-          <span className={`hover:text-[#E6875F] ${css.nameone}`}>Safe pal</span>
-          <span className={css.nameonedesc}>Blockchain Wallet</span>
-          <div className={css.innerdivsss}>
-            <div className={css.imgdivsss}></div>
-          </div>
-        </div>
-        <div className={css.fourthone}>
-          <span className={`hover:text-[#E6875F] ${css.nameone}`}>Audiojungle</span>
-          <span className={css.nameonedesc}>Blockchain Wallet</span>
-          <div className={css.innerdivs}>
-            <div className={css.imgdivs}></div>
-          </div>
-        </div>
+      <div className='grid grid-cols-2 justify-center align-baseline py-24'>
+        {portfolioItems.map((item: ForPortfolioItems, i: number) =>
+          <div key={i} className={`grid grid-rows-auto h-fit justify-center even:py-24 cursor-pointer`}>
+            <div className={`h-[360px] w-[480px] overflow-hidden`}>
+              <div className={`bg-[url("/${item.imagePath}")] bg-cover ease-in-out duration-500 h-full w-full ${i % 2 !== 0 ? 'scale-125 hover:scale-150 hover:rotate-0 rotate-12' : 'hover:scale-125'}`}></div>
+            </div>
+            <div className={`font-Bold text-4xl hover:text-[#E6875F] hover:underline`}>{item.title}</div>
+            <div className='text-[#1e1e1e] text-xl'>{item.desc}</div>
+          </div>)}
       </div>
-      <div className={css.button}>
-        <div className={css.circlebutton}>
-
-          <span className={css.moree}>VIEW MORE</span>
-        </div>
-      </div> */}
-    </div>
-  )
+      <div className='grid grid-row-1 justify-center pb-16 text-2xl'>
+        <div className='text-black hover:bg-[#E6875F] hover:text-white cursor-pointer border-2 rounded-full px-[52px] py-24'>VIEW MORE</div>
+      </div>
+    </div >)
 }
-
 export default portfolio

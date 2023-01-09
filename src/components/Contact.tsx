@@ -29,7 +29,7 @@ let BrandData = [{
 }, {
   defaultImage: 'BiDefault.png',
   hoverdImage: 'BiHover.png'
-  
+
 }, {
   defaultImage: 'CookeasyDefault.png',
   hoverdImage: 'CookeasyHover.png'
@@ -47,51 +47,59 @@ let BrandData = [{
 export default function Contact() {
   const [open, setOpen] = useState(1);
 
-  const handleOpen = (value) => {
+  const handleOpen = (value: React.SetStateAction<number>) => {
     setOpen(open === value ? 0 : value)
   }
   return (
-    <div name='contact' className={css.harry}>
-      <div className={css.branding}>
-        <span className={css.defination}>What We Do</span>
+    <div id='contact' className='relative'>
+      <div className=' relative justify-center items-center row-auto grid grid-rows-2 '>
+        <div className="font-bold text-5xl text-white ">What We Do</div>
 
-        <div className={css.firsttpart}>
-          <span className={css.brands}>Branding</span>
-          <span className={css.social}>Brand Strategy</span>
-          <span className={css.social}>Social Media</span>
-          <span className={css.social}>Marketing Assets</span>
-          <span className={css.social}>Presentations</span>
-          <span className={css.social}>Pitch Deck</span>
+        <div className='grid grid-flow-col col-auto gap-20 '>
+
+          <div className='font-bold text-4xl text-white'>Branding
+            <div className='font-thin text-base leading-10'>
+              <div >Brand Strategy</div>
+              <div >Social Media</div>
+              <div >Marketing Assets</div>
+              <div >Presentations</div>
+              <div >Pitch Deck</div>
+            </div >
+          </div>
+          <div className='font-bold text-4xl text-white'>Illustrations
+            <div className='font-thin text-base leading-10'>
+              <div >Story Board</div>
+              <div >Hand Sketch</div>
+              <div >NFT Arts</div>
+              <div >Digital Art</div>
+
+            </div >
+          </div>
+          <div className='font-bold text-4xl text-white'>UX UI Design
+            <div className='font-thin text-base leading-10'>
+              <div >User Interface</div>
+              <div >User Experience</div>
+              <div >Marketing Assets</div>
+              <div >Website and Mobile Apps</div>
+              <div >IOS and Android</div>
+            </div >
+          </div>
+          <div className='font-bold text-4xl text-white'>Development
+            <div className='font-thin text-base leading-10'>
+              <div >Frontend Development</div>
+              <div >Backend Development</div>
+              <div >Android (Kotlin, Flutter)</div>
+              <div >Post Delivery Support</div>
+            </div >
+          </div>
         </div>
 
-        <div className={css.secondpart}>
-          <span className={css.brands}>Illustrations</span>
-          <span className={css.social}>Story Board</span>
-          <span className={css.social}>Hand Sketch</span>
-          <span className={css.social}>NFT Arts</span>
-          <span className={css.social}>Digital Art</span>
-
-        </div>
-        <div className={css.thirdpart}>
-          <span className={css.brands}>UX UI Design</span>
-          <span className={css.social}>User Interface</span>
-          <span className={css.social}>User Experience</span>
-          <span className={css.social}>Design System</span>
-          <span className={css.social}>Website and Mobile Apps</span>
-          <span className={css.social}>IOS and Android</span>
-        </div>
-        <div className={css.fourthpart}>
-          <span className={css.brands}>Development</span>
-          <span className={css.social}>Frontend Development</span>
-          <span className={css.social}>Backend Development</span>
-          <span className={css.social}>Android (Kotlin, Flutter)</span>
-          <span className={css.social}>Post Delivery Support</span>
-
-        </div>
       </div>
-      <div className={css.imagecomponent}>
+      <div className='relative '>
         <img src="group-23.svg" alt="" className={css.group23} />
-      </div>
+        {/* </div> */}
+
+        {/*
       <div className={css.trustedby}>
         <img src="TRUSTEDBY.svg" alt="" />
         <div className={css.content}>
@@ -163,6 +171,7 @@ export default function Contact() {
             </AccordionBody>
           </Accordion>
         </Fragment>
+      */}
       </div>
     </div>
   )
