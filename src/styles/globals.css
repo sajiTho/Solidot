@@ -31,8 +31,7 @@
 
 body {
   position: absolute;
-  width: 100%;
-  height: 7400px;
+  /* width: 100%; */
   font-family: 'Epilogue';
   background: #1e1e1e;
 }

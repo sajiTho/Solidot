@@ -29,13 +29,13 @@ const index: NextPage = () => {
       <About />
       <Portfolio />
       <Contact />
-      {/* <Footer />
+      <Footer />
       {
         MenuState &&
         <SetMenuState.Provider value={{ MenuState, setMenuState}}>
           <Menu />
         </SetMenuState.Provider>
-      } */}
+      }
     </>
   )
 }

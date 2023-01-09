@@ -1,12 +1,10 @@
-import React from 'react'
+import Image from 'next/image';
 import Headline from '../atoms/Headline/Headlines'
-
 export interface ForPortfolioItems {
   title: string;
   desc: string;
   imagePath: string;
 }
-
 const portfolioItems: ForPortfolioItems[] = [
   {
     title: 'Dayhour',
@@ -34,7 +32,15 @@ const portfolio = () => {
         {portfolioItems.map((item: ForPortfolioItems, i: number) =>
           <div key={i} className={`grid grid-rows-auto h-fit justify-center even:py-24 cursor-pointer`}>
             <div className={`h-[360px] w-[480px] overflow-hidden`}>
-              <div className={`bg-[url("/${item.imagePath}")] bg-cover ease-in-out duration-500 h-full w-full ${i % 2 !== 0 ? 'scale-125 hover:scale-150 hover:rotate-0 rotate-12' : 'hover:scale-125'}`}></div>
+              <div className={`ease-in-out duration-500 h-full w-full ${i % 2 !== 0 ? 'scale-125 hover:scale-150 hover:rotate-0 rotate-12' : 'hover:scale-125'}`}>
+                <Image
+                  src={`/${item.imagePath}`}
+                  height={360}
+                  width={480}
+                  alt={'Image'}
+                />
+
+              </div>
             </div>
             <div className={`font-Bold text-4xl hover:text-[#E6875F] hover:underline`}>{item.title}</div>
             <div className='text-[#1e1e1e] text-xl'>{item.desc}</div>

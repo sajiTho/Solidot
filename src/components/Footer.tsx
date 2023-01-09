@@ -10,7 +10,7 @@ let socialImages = [{
 }]
 const Footer = () => {
     return (
-        <div id='footer' className={`top-[6840px] flex justify-center items-center top=[6840px] absolute w-screen h-screen`}>
+        <div id='footer' className={`flex justify-center items-center top=[6840px] absolute w-screen h-screen`}>
             <div className={`flex justify-evenly relative bg-[#E5875F] w-[88%] h-[88%] rounded-2xl`}>
                 <div className="grid grid-flow-col justify-center items-center">
                     <div className='grid grid-rows-3 max-w-[70%]'>

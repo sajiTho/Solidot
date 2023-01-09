@@ -1,5 +1,7 @@
 export interface ForQuestionAnswers{
-    question:string;
-    answer:string;
-    Divider:string;
+
+}
+export interface ForFragmentItems {
+    AccordionHeader: string;
+    AccordionBody: string;
 }
