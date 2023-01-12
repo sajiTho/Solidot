@@ -7,28 +7,28 @@ import { SetMenuState } from '../pages'
 const Hero = () => {
   let MenuState = useContext(SetMenuState)
   return (
-    <div className='grid  justify-center h-screen w-screen'>
-      <div className=''>
+    <div className='grid grid-flow-row justify-center h-auto w-screen gap-12'>
+      <div>
         <Topbar />
       </div>
-      <div className='relative w-full sm:top-7 text-center text-white sm:text-6xl sm:gap-3 md:text-4xl lg:text-8xl uppercase'>
-        <div className='lg:flex lg:justify-center items-center flex-row lg:gap-12 sm:block'>
-          <span className=''>WHERE</span>
-          <span>
-            <video src="videoone.mp4" className={`sm:mx-auto sm:m-5 object-cover rounded-xl sm:h-20 sm:w-52  md:h-20 md:w-80 lg:h-40 lg:w-96`} autoPlay loop playsInline muted></video>
-          </span>
-          <span className={`font-ExtraBold text-[#E6875F]`}>CREATIVITY</span>
+      <div className='grid grid-flow-row gap-4 sm:gap-8 text-white text-2xl sm:text-3xl md:text-5xl lg:text-6xl uppercase'>
+        <div className='grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-0 justify-center justify-items-center items-center'>
+          <div>WHERE</div>
+          <div>
+            <video src="videoone.mp4" className={`object-cover rounded-xl h-20 w-52 sm:w-60 sm:h-24 `} autoPlay loop playsInline muted></video>
+          </div>
+          <div className={`font-ExtraBold text-[#E6875F]`}>CREATIVITY</div>
         </div>
-        <div className='lg:flex lg:justify-center lg:items-center lg:gap-12 lg:pt-6 sm:block sm:items-center sm:p-4'>
-          <div>KNOWS NO BOUNDS</div>
+        <div className='grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-0 justify-between justify-items-center items-center'>
+          <div className='sm:col-span-2'>KNOWS NO BOUNDS</div>
           <Button
-            buttonClasses={`relative max-w-fit sm:mx-auto md:py-6 md:px-12 rounded-full border-2 border-white hover:bg-[#E5875F] hover:border-black text-white hover:text-black`}
+            buttonClasses={`max-w-fit py-4 px-8 sm:py-6 sm:px-12 rounded-full border-2 border-white hover:bg-[#E5875F] hover:border-black text-white hover:text-black`}
             textClasses=''
             defaultImage='arrow.svg'
             hoverdImage='arrowtwo.svg'
           />
         </div>
-        <div>
+        <div className='hidden md:block lg:block justify-self-start'>
           <RotatingIcon />
         </div>
       </div>
