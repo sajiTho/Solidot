@@ -15,8 +15,8 @@ let BrandData: ForBrandItems[] = [{
     defaultImage: 'ChadVerse.svg',
     hoverdImage: 'Four.svg'
 }, {
-    defaultImage: 'BiDefault.png',
-    hoverdImage: 'BiHover.png'
+    defaultImage: 'BiHover.png',
+    hoverdImage: 'BiDefault.png'
 
 }, {
     defaultImage: 'CookeasyDefault.png',
@@ -33,8 +33,8 @@ let BrandData: ForBrandItems[] = [{
 
 const Brands: FC<ForBrands> = ({ }) => {
     return (
-        <div className='pt-28'>
-            <div className='grid grid-cols-4 bg-[url("/TRUSTEDBY.svg")] bg-no-repeat bg-center justify-end justify-items-center mx-auto w-8/12'>
+        <div className='lg:pt-28  sm:p-12'>
+            <div className='lg:grid lg:grid-cols-4 sm:block bg-[url("/TRUSTEDBY.svg")] bg-no-repeat bg-center justify-end justify-items-center mx-auto w-8/12'>
                 {
                     BrandData.map((data, i) =>
                         <div key={i}>

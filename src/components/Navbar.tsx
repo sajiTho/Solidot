@@ -37,7 +37,7 @@ const Navbar: FC = () => {
     window.addEventListener('scroll', changeColor);
   }, []);
   return (
-    <div className="fixed w-full bottom-5 z-50 hidden md:block lg:block">
+    <div className="fixed w-full bottom-5 z-50 hidden md:hidden lg:block">
       <div className={`flex justify-center max-w-fit bg-${color} mx-auto text-white relative tracking-widest items-center gap-4 px-8 py-3 z-10 ease-in duration-300 rounded-full`} >
         <div>
           <lottie-player
