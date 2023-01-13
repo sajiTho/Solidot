@@ -29,7 +29,6 @@ const Hero = () => {
           <RotatingIcon />
         </div>
       </div>
-      {/* <img src="menu-icon.svg" alt="" className={` cursor-pointer`} onClick={() => MenuState.setMenuState(true)} /> */}
     </div >
   )
 }
