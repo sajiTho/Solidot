@@ -12,7 +12,7 @@ const Hero = () => {
         <div className='grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-0 justify-center justify-items-center items-center'>
           <div>WHERE</div>
           <div className='justify-self-start'>
-            <video src="videoone.mp4" className={`object-cover rounded-xl h-20 w-52 sm:w-60 sm:h-24 md:w-80 md:h-32`} autoPlay loop playsInline muted></video>
+            <video src="videoone.mp4" className={`object-cover rounded-xl h-20 w-64 sm:w-60 sm:h-24 md:w-80 md:h-32`} autoPlay loop playsInline muted></video>
           </div>
           <div className={`font-ExtraBold text-3xl  md:text-5xl lg:text-7xl text-[#E6875F]`}>CREATIVITY</div>
         </div>
