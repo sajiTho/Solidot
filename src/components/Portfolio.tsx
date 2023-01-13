@@ -47,7 +47,7 @@ const portfolio = () => {
           </div>)}
       </div>
       <div className='grid grid-row-1 justify-center pb-16 lg:text-2xl  '>
-        <div className='text-black hover:bg-[#E6875F] font-semibold hover:text-white cursor-pointer border-2 rounded-full lg:text-2xl sm:rounded-full lg:px-[52px] lg:py-24 py-10 px-4 sm:py-10  sm:px-[12px] sm:text-xs'>VIEW MORE</div>
+        <div className='text-black hover:bg-[#E6875F] font-semibold hover:text-white cursor-pointer border-2 rounded-full lg:text-2xl sm:rounded-full lg:px-[52px] lg:py-24 py-12 px-5 sm:py-10  sm:px-[12px] sm:text-xs'>VIEW MORE</div>
       </div>
     </div >)
 }
