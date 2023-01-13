@@ -17,7 +17,7 @@ const Hero = () => {
           <div className={`font-ExtraBold text-3xl  md:text-5xl lg:text-7xl text-[#E6875F]`}>CREATIVITY</div>
         </div>
         <div className='grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-0 justify-between justify-items-center items-center'>
-          <div className='sm:col-span-2 justify-self-end'>KNOWS NO BOUNDS</div>
+          <div className='sm:col-span-2 '>KNOWS NO BOUNDS</div>
           <Button
             buttonClasses={`max-w-fit py-4 px-8  sm:py-6 sm:px-12 rounded-full border-2 border-white hover:bg-[#E5875F] hover:border-black text-white hover:text-black`}
             textClasses=''
