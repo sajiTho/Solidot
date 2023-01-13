@@ -6,7 +6,7 @@ const Topbar: FC<ForTopBar> = () => {
         import("@lottiefiles/lottie-player");
     });
     return (
-        <div className={'flex   sm:justify-center pt-6 mx-auto w-48 h-28 sm:w-[180px] sm:h-[120px]'}>
+        <div className={'flex justify-center pt-6 mx-auto w-48 h-28 sm:w-[180px] sm:h-[120px]'}>
             <lottie-player
                 autoplay
                 loop
