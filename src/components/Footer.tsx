@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Button from '../atoms/Let\'sTalkButton/Button'
 let socialImages = [{
     src: 'componentI.svg',
@@ -10,19 +11,19 @@ let socialImages = [{
 }]
 const Footer = () => {
     return (
-        <div id='footer' className={`flex justify-center items-center top=[6840px] sm:top-[40px] relative lg:w-screen lg:h-screen sm:items-center `}>
-            <div className={`flex justify-evenly relative bg-[#E5875F] w-[88%] lg:h-[88%] rounded-2xl sm:h-auto`}>
-                <div className="lg:grid grid-flow-col justify-center items-center sm:mx-auto sm:block">
-                    <div className='grid grid-rows-3 max-w-[70%]'>
-                        <div className='lg:font-semibold lg:text-2xl self-center sm:text-xs'>
+        <div id='footer' className={`flex justify-center items-center top=[6840px] sm:top-[40px] relative py-10 lg:w-screen lg:h-screen sm:items-center `}>
+            <div className={`flex  py-4 justify-evenly relative  bg-[#E5875F] w-[88%] lg:h-[88%] rounded-2xl sm:h-auto`}>
+                <div className=" lg:grid grid-flow-col justify-center items-center sm:mx-auto  sm:block">
+                    <div className='grid grid-rows-3 max-w-[70%] mx-auto'>
+                        <div className='lg:font-semibold lg:text-2xl self-center text-lg'>
                             Your search for a design partner ends here.
                         </div>
-                        <div className='lg:text-7xl font-ExtraBold sm:text-5xl'>
+                        <div className='lg:text-7xl font-ExtraBold text-4xl md:6xl'>
                             SO, HOW CAN WE HELP?
                         </div>
-                        <div className='self-center'>
+                        <div className='self-start pt-6 '>
                             <Button
-                                buttonClasses={`relative max-w-fit lg:py-6 lg:px-12  sm:py-3 sm:px-6 absolute border-black hover:bg-black text-black hover:text-white`}
+                                buttonClasses={`max-w-fit py-4 px-8 content-center sm:py-6 sm:px-12 text-xl absolute border-black hover:bg-black text-black hover:text-white`}
                                 textClasses=''
                                 defaultImage='arrowtwo.svg'
                                 hoverdImage='arrow.svg'
@@ -30,9 +31,22 @@ const Footer = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="grid grid-cols-2">
+                        <div className="grid grid-cols-2 mx-16">
                             {socialImages.map((social, i) =>
-                                <img key={i} src={social.src} alt={social.src} className={`rounded-lg hover:bg-[#ff976b]`} />)
+
+                                <div 
+                                    key={i}
+                                >
+                                    <Image
+                                        src={`/${social.src}`}
+                                        // layout="fill"
+                                        alt={social.src}
+                                        height={150}
+                                        width={150}
+                                        className={`rounded-lg hover:bg-[#ff976b]`}
+                                    />
+                                </div>
+                            )
                             }
                         </div>
                     </div>

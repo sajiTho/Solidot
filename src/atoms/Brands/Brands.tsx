@@ -33,7 +33,7 @@ let BrandData: ForBrandItems[] = [{
 
 const Brands: FC<ForBrands> = ({ }) => {
     return (
-        <div className='lg:pt-28  sm:p-12'>
+        <div className='lg:pt-28  p-12'>
             <div className='lg:grid lg:grid-cols-4 sm:block bg-[url("/TRUSTEDBY.svg")] bg-no-repeat bg-center justify-end justify-items-center mx-auto w-8/12'>
                 {
                     BrandData.map((data, i) =>

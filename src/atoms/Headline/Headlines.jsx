@@ -1,15 +1,16 @@
 import styles from './HeadlineStyles.module.css'
 const Headline = () => {
     return (
-        <div className={`grid grid-rows-auto lg:text-9xl lg:font-ExtraBold overflow-hidden sm:font-ExtraBold sm:text-6xl md:text:8xl `}>
-            <marquee direction="left" scrollamount="10" behavior='Alternate'>
-                <div className={`text-[#E6875F]`}>
-                    {'FEATURED CASE STUDIES FEATURED CASE STUDIES '}
-                </div>  
-                <div className={`${styles.dropShadow} text-white`}>
-                    {'RECENT CASE STUDIES RECENT CASE STUDIES REC '}
+        <div className={`overflow-x-clip`}>
+            <div className={`grid py-4 md:pt-16 grid-rows-auto w-screen lg:text-9xl lg:font-ExtraBold font-ExtraBold text-6xl md:text:8xl whitespace-nowrap `}>
+
+                <span className={`text-[#E6875F] animate-marqueeEffect`}>
+                    {'FEATURED CASE STUDIES '.repeat(2)}
+                </span>
+                <div className={`${styles.dropShadow} text-white animate-marqueeEffect`}>
+                    {'RECENT CASE STUDIES '.repeat(2) + 'REC'}
                 </div>
-            </marquee>
+            </div>
         </div >
     )
 }

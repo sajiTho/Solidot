@@ -17,15 +17,15 @@ const WhatWeDoItems: ForWhatWeDoItems[] = [
 ]
 const WhatWeDo: FC = () => {
     return (
-        <div className='justify-center items-center grid grid-rows-auto text-white'>
-            <div className="font-bold lg:text-5xl sm:text-xl mx-auto py-10">
+        <div className='justify-center items-center pb-5 grid grid-rows-auto text-white'>
+            <div className="font-bold text-2xl lg:text-5xl sm:text-xl mx-auto py-10">
                 What We Do
             </div>
             <div className= 'grid grid-cols-2 text-center md:text-left md:grid-cols-4 gap-20 mx-auto  '>
                 {WhatWeDoItems.map((item, i) =>
-                    <div key={i} className='font-bold lg:text-4xl sm:text-lg '>
+                    <div key={i} className=' text-lg font-bold lg:text-4xl sm:text-lg '>
                         {item.title}
-                        <div className='lg:font-thin lg:text-lg leading-10 sm:text-xs'>
+                        <div className='lg:font-thin lg:text-lg text-xs leading-10 sm:text-xs'>
                             {item.children.map((child, j) =>
                                 <div key={j}>{child}</div>)}
                         </div >

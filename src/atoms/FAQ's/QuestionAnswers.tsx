@@ -34,8 +34,8 @@ const QuestionAnswers: FC<ForQuestionAnswers> = ({ }) => {
     return (
 
 
-        <div className={`text-white mx-auto w-8/12 lg:pt-28 sm:pt-7`}>
-            <div className={`lg:my-10 lg:text-6xl font-bold sm:my-3 sm:text-2xl `}>
+        <div className={`text-white mx-auto w-8/12 lg:pt-28 pt-7`}>
+            <div className={`lg:my-10 lg:text-6xl text-3xl  font-bold my-3 sm:text-2xl `}>
                 Asking questions are free
             </div>
             <Fragment>
