@@ -34,9 +34,7 @@ const Footer = () => {
                         <div className="grid grid-cols-2 mx-12 pb-12 my-3 items-end gap-10 self-end scroll ">
                             {socialImages.map((socialimage, i) =>
 
-                                <div 
-                                    key={i}
-                                >
+                                <div key={i} >
                                     <Image
                                         src={`/${socialimage.src}`}
                                         // layout="fill"
