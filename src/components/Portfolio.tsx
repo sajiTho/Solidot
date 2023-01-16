@@ -26,7 +26,7 @@ const portfolioItems: ForPortfolioItems[] = [
 ]
 const portfolio = () => {
   return (
-    <div id='portfolio' className='bg-white '>
+    <div id='portfolio' className='bg-white -mt-1'>
       <Headline />
       <div className='lg:grid grid-cols-2 justify-center align-baseline py-6 lg:py-24 sm:py-8 sm:px-0 sm:block sm:mx-auto'>
         {portfolioItems.map((item: ForPortfolioItems, i: number) =>
@@ -47,7 +47,7 @@ const portfolio = () => {
           </div>)}
       </div>
       <div className='grid grid-row-1 justify-center pb-16 lg:text-2xl  '>
-        <div className='text-black hover:bg-[#E6875F] font-semibold hover:text-white cursor-pointer border-2 rounded-full lg:text-2xl sm:rounded-full lg:px-[52px] lg:py-24 py-12 px-5 sm:py-10  sm:px-[12px] sm:text-xs'>VIEW MORE</div>
+        <div className='text-black hover:bg-[#E6875F] font-semibold hover:text-white cursor-pointer border-2 rounded-full lg:text-2xl sm:rounded-full lg:px-[52px] lg:py-24 py-14 px-7 sm:py-10  sm:px-[12px] sm:text-xs'>VIEW MORE</div>
       </div>
     </div >)
 }

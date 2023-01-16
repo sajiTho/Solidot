@@ -42,7 +42,7 @@ const QuestionAnswers: FC<ForQuestionAnswers> = ({ }) => {
                 {
                     FragmentItems.map((item, i) =>
                         <Accordion key={i} open={open === i + 1}>
-                            <AccordionHeader className={`lg:text-3xl lg:py-10 sm:text-xl text-white hover:text-[#484f4f]`} onClick={() => handleOpen(i + 1)}>
+                            <AccordionHeader className={`lg:text-3xl lg:py-10 sm:text-xl text-start text-white hover:text-[#484f4f]`} onClick={() => handleOpen(i + 1)}>
                                 {item.AccordionHeader}
                             </AccordionHeader>
                             <AccordionBody className={`opacity-10 lg:text-lg sm:text-xs text-[#858484]`}>

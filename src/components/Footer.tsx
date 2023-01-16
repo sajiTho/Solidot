@@ -11,14 +11,14 @@ let socialImages = [{
 }]
 const Footer = () => {
     return (
-        <div id='footer' className={`flex justify-center items-center top=[6840px] sm:top-[40px] relative py-10 lg:w-screen lg:h-screen sm:items-center `}>
-            <div className={`flex  py-4 justify-evenly relative  bg-[#E5875F] w-[88%] lg:h-[88%] rounded-2xl sm:h-auto`}>
+        <div id='footer' className={`flex justify-center items-center top=[6840px] sm:top-[40px] relative py-20 lg:w-screen lg:h-screen sm:items-center`}>
+            <div className={`flex justify-evenly relative  bg-[rgb(229,135,95)] w-[88%] lg:h-[88%] rounded-2xl sm:h-auto `}>
                 <div className=" lg:grid grid-flow-col justify-center items-center sm:mx-auto  sm:block">
-                    <div className='grid grid-rows-3 max-w-[70%] mx-auto'>
-                        <div className='lg:font-semibold lg:text-2xl self-center text-lg'>
+                    <div className='grid grid-rows-3 max-w-[70%]  -my-20 mx-auto'>
+                        <div className='lg:font-semibold lg:text-2xl self-end pb-4 text-lg'>
                             Your search for a design partner ends here.
                         </div>
-                        <div className='lg:text-7xl font-ExtraBold text-4xl md:6xl'>
+                        <div className='lg:text-7xl font-ExtraBold text-5xl leading-relaxed md:6xl'>
                             SO, HOW CAN WE HELP?
                         </div>
                         <div className='self-start pt-6 '>
@@ -31,7 +31,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="grid grid-cols-2 mx-16">
+                        <div className="grid grid-cols-2 mx-12 pb-12 scroll ">
                             {socialImages.map((social, i) =>
 
                                 <div 
