@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import Button from '../atoms/Let\'sTalkButton/Button'
 let socialImages = [{
-    src: 'componentI.svg',
+    src: 'componentI.png',
 }, {
-    src: 'componentII.svg'
+    src: 'componentIV.png'
 }, {
-    src: 'componentIII.svg'
+    src: 'componentIII.png'
 }, {
-    src: 'componentIV.svg'
+    src: 'componentII.png'
 }]
 const Footer = () => {
     return (
@@ -31,18 +31,18 @@ const Footer = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="grid grid-cols-2 mx-12 pb-12 scroll ">
-                            {socialImages.map((social, i) =>
+                        <div className="grid grid-cols-2 mx-12 pb-12 my-3 items-end gap-10 self-end scroll ">
+                            {socialImages.map((socialimage, i) =>
 
                                 <div 
                                     key={i}
                                 >
                                     <Image
-                                        src={`/${social.src}`}
+                                        src={`/${socialimage.src}`}
                                         // layout="fill"
-                                        alt={social.src}
-                                        height={150}
-                                        width={150}
+                                        alt={socialimage.src}
+                                        height={70}
+                                        width={80}
                                         className={`rounded-lg hover:bg-[#ff976b]`}
                                     />
                                 </div>

@@ -6,14 +6,14 @@ let BrandData: ForBrandItems[] = [{
     defaultImage: 'TheDegens.svg',
     hoverdImage: 'one.svg'
 }, {
-    defaultImage: 'Gorillainu.svg',
+    defaultImage: 'two.svg',
     hoverdImage: 'two.svg'
 }, {
     defaultImage: 'Cryptor.svg',
     hoverdImage: 'three.svg'
 }, {
     defaultImage: 'ChadVerse.svg',
-    hoverdImage: 'Four.svg'
+    hoverdImage: 'chadVerse.svg'
 }, {
     defaultImage: 'BiHover.png',
     hoverdImage: 'BiDefault.png'

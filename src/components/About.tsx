@@ -3,7 +3,7 @@ import { FC } from 'react'
 const About: FC = () => {
   return (
     <div id='about' className='grid grid-rows-auto justify-center items-center text-center bg-white  '>
-      <div className='self-start -mt-1 border-0 outline-none border-t-[100px] border-t-[#1e1e1e] border-r-[100vw] border-r-white py-2 '>
+      <div className='self-start -mt-1 border-0 outline-none border-t-[70px] sm:border-t-[100px] border-t-[#1e1e1e] border-r-[100vw] border-r-white py-2 '>
       </div>
       <div className='text-[#E6875F] md:py-20 sm:self-start sm:h-3 text-4xl font-ExtraBold lg:text-5xl sm:font-bold sm:text-3xl py-2'>
         WHY SOLIDOT?
